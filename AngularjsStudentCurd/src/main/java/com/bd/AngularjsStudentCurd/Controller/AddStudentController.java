@@ -21,7 +21,7 @@ public class AddStudentController {
 
 	@RequestMapping(value = "/AddStudentDetails", method = RequestMethod.POST, produces="application/json")
 	public StudentCurdBean isAddStudent(@RequestBody StudentCurdBean stubean) {
-
+		System.out.println("Summa oru test than");
 		System.out.println("Name-" + stubean.getName());
 		/*System.out.println("Id-" + stubean.getId());*/
 		System.out.println("Address-" + stubean.getAddress());
