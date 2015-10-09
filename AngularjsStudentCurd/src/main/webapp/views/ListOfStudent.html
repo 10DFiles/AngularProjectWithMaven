@@ -1,0 +1,47 @@
+<!DOCTYPE head PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<body>
+	<form role="form" ng-controller="listOfStudentController as students">
+
+		<h1>Student List</h1>
+		<div class="table-responsive">
+			<table class="table table-striped">
+				<thead>
+
+					<tr>
+						<td><strong>Search by Name:</strong></td>
+						<td><input type="text" data-ng-model="stu.name"></td>
+					</tr>
+
+					<tr>
+						<td><strong>ID</strong></td>
+						<td><strong>Name</strong></td>
+						<td><strong>Address</strong></td>
+						<td><strong>Mark</strong></td>
+						<td><strong>StudentID</strong></td>
+						<td><strong>Modify/Remove</strong></td>
+					</tr>
+				</thead>
+				<tbody ng-repeat="stu in hello| filter:stu.name">
+					<tr>
+						<td>{{stu.id}}</td>
+						<td>{{stu.name}}</td>
+						<td>{{stu.address}}</td>
+						<td>{{stu.mark}}</td>
+						<td>{{stu.studentID}}</td>
+						<td><span><button type="button"
+									data-ng-click="modify(stu.id)" value="Remove"
+									class="btn btn-primary">Modify</button></span>&nbsp; <span><button
+									type="button" value="Remove" class="btn btn-primary"
+									ng-click="remove(stu.id)">Remove</button></span></td>
+					</tr>
+				</tbody>
+			</table>
+
+
+		</div>
+	</form>
+</body>
+</html>
+
+

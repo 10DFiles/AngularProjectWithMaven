@@ -1,0 +1,61 @@
+<div data-ng-controller="AddStudentController">
+	<form novalidate name="AddStudent">
+		<div class="container">
+			<h2>Add Student Details</h2>
+			<br />
+
+			<div class="col-md-12">
+
+				<label class=""><strong> Student Name:</strong></label>
+
+				<div class="form-group">
+					<input type="text" class="form-control"  name= "name"placeholder="Student Name"
+						autofocus="autofocus" data-ng-model="details.name" ><span ng-show="AddStudent.name.$dirty && AddStudent.name.$error.required"> Invalid Name</span>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+
+				<label class=""><strong> Student ID:</strong></label>
+
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Student ID"
+						autofocus="autofocus" data-ng-model="details.studentID">
+				</div>
+			</div>
+
+			<div class="col-md-12">
+
+				<label class=""><strong> Student Address:</strong></label>
+
+				<div class="form-group">
+					<input type="text" class="form-control"
+						placeholder="Student Address" autofocus="autofocus"
+						data-ng-model="details.address">
+				</div>
+			</div>
+
+
+			<div class="col-md-12">
+
+				<label class=""><strong> Student Mark:</strong></label>
+
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Student Mark"
+						autofocus="autofocus" data-ng-model="details.mark">
+				</div>
+			</div>
+
+			<div class="col-md-2" align="center">
+				<div  class="form-group">
+					<button type="button" data-ng-click="submitdetails()"
+						class="btn btn-primary">submit</button>
+				</div>
+			</div>
+
+		</div>
+	</form>
+</div>
+
+
+
