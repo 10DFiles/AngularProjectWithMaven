@@ -19,7 +19,7 @@
 		<servlet.version>2.5</servlet.version>
 
 
-		<!-- DHinakar Spring Update -->
+		<!-- Spring Update -->
 		<spring-framework.version>4.1.6.RELEASE</spring-framework.version>
 
 		<!-- Hibernate / JPA -->
