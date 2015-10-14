@@ -2,7 +2,7 @@
 
 
  <?php
-$output = shell_exec('git pull https://github.com/Selvam123/gradletest.git');
+$output = `echo Dhina_We_Made_It `;
 echo "<pre>$output</pre>";
 ?>
   
