@@ -1,10 +1,5 @@
-<?php 
-try
-{
-  $payload = json_decode($_REQUEST['payload']);
-}
-catch(Exception $e)
-{
-  exit(0);
-}
-?>
+ <?php 
+ $out=`gradle -q app `;
+
+ echo "<pre>$out</pre>";
+ ?>
