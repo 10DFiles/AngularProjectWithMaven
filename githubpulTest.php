@@ -2,7 +2,7 @@
 
 
  <?php
-$output = `echo Dhina_We_Made_It `;
+$output = `git pull`;
 echo "<pre>$output</pre>";
 ?>
   
