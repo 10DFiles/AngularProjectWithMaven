@@ -2,7 +2,7 @@
 
 
  <?php 
- $out=`git pull`
+ $out=`git pull`;
 
  echo "<pre>$out</pre>";
  ?>
