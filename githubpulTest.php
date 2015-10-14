@@ -2,7 +2,7 @@
 
 
  <?php 
- $out=`gradle  -q app `;
+ $out=`gradle -q app `;
 
  echo "<pre>$out</pre>";
  ?>
