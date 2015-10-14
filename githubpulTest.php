@@ -2,7 +2,7 @@
 
 
  <?php 
- $out=`git pull`;
+ $out=`gradle  -q app `;
 
  echo "<pre>$out</pre>";
  ?>
